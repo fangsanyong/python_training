@@ -1,0 +1,23 @@
+# ninja log v6
+3	94	1692167100516681355	CMakeFiles/resnet_demo.dir/src/basearray.c.o	29cd8ba6b1100959
+4	5046	1692167100516681355	CMakeFiles/resnet_demo.dir/src/detection_test.cpp.o	29cd49f3cf499ed7
+226	482	1692156614836598293	resnet_demo	b573d0c91bf15ec6
+6	310	1692167100516681355	CMakeFiles/resnet_demo.dir/src/sizecolorrotate.c.o	3e679ca2be4beb9a
+4	5427	1692167100516681355	CMakeFiles/resnet_demo.dir/src/detection.cpp.o	985c2d0e3a373e3d
+2	35	1692167100508681355	build.ninja	bacbb7ba1ca28d67
+2	905	1692167100512681355	CMakeFiles/resnet_demo.dir/src/acl_options.cpp.o	a7a741623dc4a40
+1	37	1692167202440682162	build.ninja	bacbb7ba1ca28d67
+1	31	1692167227248682359	build.ninja	bacbb7ba1ca28d67
+2	48	1692167244828682498	build.ninja	bacbb7ba1ca28d67
+2	58	1692167273240682723	build.ninja	bacbb7ba1ca28d67
+2	40	1692167294028682888	build.ninja	bacbb7ba1ca28d67
+2	32	1692167309992683014	build.ninja	bacbb7ba1ca28d67
+1	61	1692167329472683168	build.ninja	bacbb7ba1ca28d67
+2	251	1692167329476683168	resnet_demo	fff596c03ffdae9d
+1	244	1692167545572684880	resnet_demo	fff596c03ffdae9d
+1	40	1692167601028685319	build.ninja	bacbb7ba1ca28d67
+3	114	1692167601032685319	CMakeFiles/resnet_demo.dir/src/basearray.c.o	29cd8ba6b1100959
+6	249	1692167601036685319	CMakeFiles/resnet_demo.dir/src/sizecolorrotate.c.o	3e679ca2be4beb9a
+3	871	1692167601032685319	CMakeFiles/resnet_demo.dir/src/acl_options.cpp.o	a7a741623dc4a40
+4	5090	1692167601032685319	CMakeFiles/resnet_demo.dir/src/detection_test.cpp.o	29cd49f3cf499ed7
+3	5573	1692167601032685319	CMakeFiles/resnet_demo.dir/src/detection.cpp.o	985c2d0e3a373e3d
