@@ -1,6 +1,0 @@
-mount -t nfs -o nolock,tcp 192.168.1.202:/home/fsy/Ascend/linux/nfs  /fsy
-umount -lf /fsy
-hisi-gdbserver 192.168.1.202:22  resnet_demo
-export LD_LIBRARY_PATH=/fsy/new_demo/build:$LD_LIBRARY_PATH
-export PATH=/usr/local/bin::$LD_LIBRARY_PATH
-

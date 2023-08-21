@@ -1,3 +1,0 @@
-/home/fsy/Ascend/linux/nfs/new_demo/build/CMakeFiles/rebuild_cache.dir
-/home/fsy/Ascend/linux/nfs/new_demo/build/CMakeFiles/resnet_demo.dir
-/home/fsy/Ascend/linux/nfs/new_demo/build/CMakeFiles/edit_cache.dir
