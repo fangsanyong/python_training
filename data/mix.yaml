@@ -1,0 +1,97 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: [
+# /home/coco/datasets/ped-car-temp/firesmoke/fs2/images,
+# /home/coco/datasets/ped-car-temp/firesmoke/fs1/images,
+/home/coco/datasets/ped-car-temp/animal/3k/images,
+/home/coco/datasets/ped-car-temp/20230616/rgb-0/images, # 各种姿态的人
+/home/coco/datasets/ped-car-temp/SSLAD-2D/images, # 车辆开源数据
+/home/coco/datasets/ped-car-temp/20230718/flir2_rgb_train/images, #人车开源数据
+/home/coco/datasets/ped-car-temp/20230718/flir2_rgb_val/images, #人车开源数据
+/home/coco/datasets/ped-car-temp/20230504/images, # 俯视车
+#/home/coco/datasets/ped-car-temp/20230704/images, #大概10来张盆（fire smoke） 和实验室一个人的位姿
+/home/coco/datasets/ped-car-temp/20230721/mot20/images,  # mot20目标追踪数据
+# /home/coco/datasets/ped-car-temp/20230721/VOC2020/images, # voc部分数据
+/home/coco/datasets/coco/images/train2017,   #coco数据集
+/home/coco/datasets/ped-car-temp/20230724/fire_smoke1/images, # 百度aistudio下载的2624张左右通用烟火数据集
+# /home/coco/datasets/ped-car-temp/20230724/rgb/images,  # 只有个盆1000来张烟火过拟合数据集
+# /home/coco/datasets/ped-car-temp/20230724/fall/images,
+/home/coco/datasets/hongwai/train/20230620/6/images, # 50张现场行人奔跑数据集
+/home/coco/datasets/hongwai/train/20230620/7/images,  # 40张现场行人俯卧撑数据集
+# /home/coco/datasets/ped-car-temp/20230725/20230725/images, # 只有个盆800来张烟火过拟合数据集
+/home/coco/datasets/ped-car-temp/20230725/rgb/images,      #  真是场景人数据
+# /home/coco/datasets/ped-car-temp/20230728/firesmoke/images, # 百度aistudio下载的4000张左右通用烟火数据集
+/home/coco/datasets/ped-car-temp/20230731/0731-smokefire/1/images,  # 真是场景烟火
+/home/coco/datasets/ped-car-temp/20230731/0731-smokefire/2/images, # 真是场景烟火
+/home/coco/datasets/ped-car-temp/20230731/0731-smokefire/3/images, # 真是场景烟火
+/home/coco/datasets/ped-car-temp/20230731/0731-smokefire/4/images, # 真是场景烟火
+/home/coco/datasets/ped-car-temp/20230731/0731-smokefire/5/images, # 真是场景烟火
+/home/coco/datasets/ped-car-temp/20230731/0731-smokefire/6/images, # 真是场景烟火
+/home/coco/datasets/ped-car-temp/20230809/fall/images/train, #躺着数据集
+/home/coco/datasets/ped-car-temp/20230809/fall/images/val,  # 躺着数据集
+/home/coco/datasets/ped-car-temp/20230809/dark/1/images,   # 天黑场景
+/home/coco/datasets/ped-car-temp/20230809/dark/2/images, # 天黑场景
+/home/coco/datasets/ped-car-temp/20230809/dark/3/images,  # 天黑场景
+/home/coco/datasets/ped-car-temp/20230810/1/images, # 采集天黑场景火 571
+/home/coco/datasets/ped-car-temp/20230810/3/images, # 采集天黑场景火 634
+/home/coco/datasets/ped-car-temp/20230810/6/images, # 篮球场 黑夜 俯卧撑 200
+/home/coco/datasets/ped-car-temp/20230912/VisDrone2019-DET-train/VisDrone2019-DET-train/images, # 6471 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/LLVIP/visible/images, ##3078 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20231030/images,          # 2099  人和车
+/home/coco/datasets/ped-car-temp/20231118/1/images,        # 烟火  166
+/home/coco/datasets/ped-car-temp/20231118/2/images,        # 烟火  8147
+
+###下面是红外数据
+/home/coco/datasets/hongwai/train/20230620/1/images,  # 真实人车 85
+/home/coco/datasets/hongwai/train/20230620/2/images, # 真实人车 489
+/home/coco/datasets/hongwai/train/20230620/3/images, # 真实人车 309
+/home/coco/datasets/hongwai/train/20230620/4/images, # 真实人车 71 
+/home/coco/datasets/pedestrian_car/train/20230616/gray-0/images, # 真实人车 3577 
+/home/coco/datasets/pedestrian_car/train/20230616/gray-1/images, # 真实人车 727
+/home/coco/datasets/hongwai/train/20210621/images, # 真实人车  916
+/home/coco/datasets/hongwai/train/20230626, # 只有火 75
+/home/coco/datasets/hongwai/train/20230629/gray/images, # 真实人车 匍匐动作
+/home/coco/datasets/hongwai/train/20230705/images,  #  # 真实人车 火  4903
+/home/coco/datasets/ped-car-temp/20230718/flir2_hw_train/images, # 开源数据
+/home/coco/datasets/ped-car-temp/20230718/flir2_hw_val/images, # 开源数据
+/home/coco/datasets/hongwai/train/20230724/images,  # 只有火 820
+/home/coco/datasets/hongwai/train/20230725/images,  # 真实人 458
+/home/coco/datasets/hongwai/train/20230726/images,   # m3fd开源数据集
+/home/coco/datasets/ped-car-temp/20230810/4/images,  # 红外人火数据 火比较大 炉子和火分开标 
+/home/coco/datasets/ped-car-temp/20230810/5/images,  # 红外人火数据 
+/home/coco/datasets/ped-car-temp/20230912/HIT-UAV/hit-uav/images/train, #2008 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/HIT-UAV/hit-uav/images/val, #287 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/LLVIP/infrared/images,      #3078 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/personcar/images,           #采集数据 1681
+]
+val: [
+# /home/coco/datasets/pedestrian_car/val/20230423/images,
+#/home/coco/datasets/pedestrian_car/val/SSLAD-2D/images,
+#/home/coco/datasets/pedestrian_car/val/20230721/mot20/images
+# /home/coco/datasets/pedestrian_car/val/20230424/images
+/home/coco/datasets/coco/images/val2017,
+# /home/coco/datasets/hongwai/train/20230626,
+# /home/coco/datasets/hongwai/train/20230724/images,
+# /home/coco/datasets/ped-car-temp/20230809/dark/1/images,   # 天黑场景
+# /home/coco/datasets/ped-car-temp/20230809/dark/2/images, # 天黑场景
+# /home/coco/datasets/ped-car-temp/20230809/dark/3/images,  # 天黑场景
+# /home/coco/datasets/ped-car-temp/20230724/fire_smoke/images
+]
+
+# number of classes
+nc: 5
+
+# class names
+names: ["Person","Car","fire","smoke","Animal"]
+
+
+# CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --batch-size 150 --device 0,1 --data data/mix-temp.yaml --name mixtemp
+
+

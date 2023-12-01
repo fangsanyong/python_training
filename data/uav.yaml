@@ -1,0 +1,107 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: [
+/home/coco/datasets/ped-car-temp/20230616/rgb-0/images, # 各种姿态的人
+/home/coco/datasets/ped-car-temp/SSLAD-2D/images, # 车辆开源数据
+/home/coco/datasets/ped-car-temp/20230718/flir2_rgb_train/images, #人车开源数据
+/home/coco/datasets/ped-car-temp/20230718/flir2_rgb_val/images, #人车开源数据
+/home/coco/datasets/ped-car-temp/20230504/images, # 俯视车
+/home/coco/datasets/ped-car-temp/20230721/mot20/images,  # mot20目标追踪数据
+/home/coco/datasets/coco/uav/images/train2017,   #coco数据集
+/home/coco/datasets/hongwai/train/20230620/6/images, # 50张现场行人奔跑数据集
+/home/coco/datasets/hongwai/train/20230620/7/images,  # 40张现场行人俯卧撑数据集
+/home/coco/datasets/ped-car-temp/20230725/rgb/images,      #  真是场景人数据
+/home/coco/datasets/ped-car-temp/uav/1/images,   # 无人机数据 1097
+/home/coco/datasets/ped-car-temp/uav/2/images,    # 无人机数据 1359
+/home/coco/datasets/ped-car-temp/uav/3/images,    # 无人机数据 2850
+/home/coco/datasets/ped-car-temp/uav/4/images,   # 无人机数据 2168
+/home/coco/datasets/ped-car-temp/uav/buy/1/images, # 无人机数据 3351
+/home/coco/datasets/ped-car-temp/uav/buy/1/fix/images, # 无人机数据 固定翼 1707
+/home/coco/datasets/ped-car-temp/uav/buy/3/fix/images, # 无人机数据 固定翼 3641
+/home/coco/datasets/ped-car-temp/uav/buy/3/images, # 无人机数据 6314
+/home/coco/datasets/ped-car-temp/uav/buy/4/images, # 无人机数据 6231
+/home/coco/datasets/ped-car-temp/uav/buy/2/1/images, # 无人机数据  4757
+/home/coco/datasets/ped-car-temp/uav/buy/2/2/images, # 无人机数据 2801
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/1/images, # 固定翼 73
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/2/images, # 固定翼 116
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/3/images, # 固定翼 57
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/4/images, # 固定翼 30
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/5/images, # 固定翼 126
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/6/images, # 固定翼 43
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/7/images, # 固定翼 144
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/8/images, # 固定翼 36
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/9/images, # 固定翼 85 
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/10/images, # 固定翼56
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/11/images, # 固定翼 125
+/home/coco/datasets/ped-car-temp/uav/20230815/gdy/12/images, # 固定翼 62
+/home/coco/datasets/ped-car-temp/uav/20230816/1/images,  # 201
+/home/coco/datasets/ped-car-temp/uav/20230816/2/images, #80
+/home/coco/datasets/ped-car-temp/uav/20230816/3/images, #424
+/home/coco/datasets/ped-car-temp/uav/20230816/4/images, #204
+/home/coco/datasets/ped-car-temp/uav/20230816/5/images, #90
+/home/coco/datasets/ped-car-temp/uav/20230816/6/images, #381
+/home/coco/datasets/ped-car-temp/20230831/data1/images,       # 旋翼 147
+/home/coco/datasets/ped-car-temp/20230831/data2/images,       # 旋翼 300
+/home/coco/datasets/ped-car-temp/20230831/cut,                 # 切割图片
+#人车
+/home/coco/datasets/ped-car-temp/20230912/VisDrone2019-DET-train/VisDrone2019-DET-train/images, # 6471 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/LLVIP/visible/images, ##3078 开源俯视数据集
+###下面是红外数据
+/home/coco/datasets/hongwai/train/20230620/1/images,  # 真实人车 85
+/home/coco/datasets/hongwai/train/20230620/2/images, # 真实人车 489
+/home/coco/datasets/hongwai/train/20230620/3/images, # 真实人车 309
+/home/coco/datasets/hongwai/train/20230620/4/images, # 真实人车 71
+/home/coco/datasets/pedestrian_car/train/20230616/gray-0/images, # 真实人车 3577
+/home/coco/datasets/pedestrian_car/train/20230616/gray-1/images, # 真实人车 727
+/home/coco/datasets/hongwai/train/20210621/images, # 真实人车  916
+/home/coco/datasets/ped-car-temp/20230718/flir2_hw_train/images, # 开源数据
+/home/coco/datasets/ped-car-temp/20230718/flir2_hw_val/images, # 开源数据
+/home/coco/datasets/hongwai/train/20230726/images,   # m3fd开源数据集
+/home/coco/datasets/ped-car-temp/uav/20230815/train/images, # anti uav 开源数据
+/home/coco/datasets/ped-car-temp/uav/20230815/val/images, # anti uav 开源数据
+/home/coco/datasets/ped-car-temp/uav/20230817/data1/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data3/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data9/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data16/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data18/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data2/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data4/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data6/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data7/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data14/images, # 固定翼
+/home/coco/datasets/ped-car-temp/uav/20230817/data20/images, # 固定翼
+/home/coco/datasets/ped-car-temp/20230831/exp7/images,       # 旋翼
+# 人车
+/home/coco/datasets/ped-car-temp/20230912/HIT-UAV/hit-uav/images/train, #2008 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/HIT-UAV/hit-uav/images/val, #287 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/LLVIP/infrared/images,      #3078 开源俯视数据集
+/home/coco/datasets/ped-car-temp/20230912/personcar/images,           #采集数据 1681
+/home/coco/datasets/ped-car-temp/uav/20230914/undrone1/images,       # 旋翼采集数据 620
+]
+val: [
+# /home/coco/datasets/pedestrian_car/val/20230423/images,
+#/home/coco/datasets/pedestrian_car/val/SSLAD-2D/images,
+#/home/coco/datasets/pedestrian_car/val/20230721/mot20/images
+# /home/coco/datasets/pedestrian_car/val/20230424/images
+/home/coco/datasets/coco/uav/images/val2017,
+/home/coco/datasets/ped-car-temp/uav/val/images,
+# /home/coco/datasets/ped-car-temp/20230724/fire_smoke/images
+]
+
+# number of classes
+nc: 4
+
+# class names
+names: ["Person","Car","drone",'fix']
+
+
+# CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --batch-size 150 --device 0,1 --data data/mix-temp.yaml --name mixtemp
+
+

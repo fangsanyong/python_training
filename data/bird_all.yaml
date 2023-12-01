@@ -1,0 +1,65 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: [
+        # 可见光 开源数据16551
+     
+        /home/coco/datasets/ped-car-temp/20230802/bird/train/bird/images,
+        /home/coco/datasets/ped-car-temp/20230802/bird/train/bird2/images,
+        /home/coco/datasets/ped-car-temp/20230802/bird/train/bird3/images, #1980 
+        /home/coco/datasets/coco/bird/images/train2017,       
+        /home/coco/datasets/ped-car-temp/20230802/bird/VOC2007/images, 
+        /home/coco/datasets/ped-car-temp/20230802/bird/VOC2012/images,
+        
+  
+        # 开源数据 9000 + 标定600
+        # /home/coco/datasets/ped-car-temp/bird/20230906/20230829/images,
+        # /home/coco/datasets/ped-car-temp/bird/20230906/20230831,
+        # /home/coco/datasets/ped-car-temp/bird/20230906/slice_640_02_1693995905/images, # 极小目标
+        # 标定数据
+        # /home/coco/datasets/ped-car-temp/bird/20230906/20230901/bird/images, # 群鸟 159
+        # /home/coco/datasets/ped-car-temp/bird/20230906/20230901/bird2/images, # 群鸟 41
+        # /home/coco/datasets/ped-car-temp/bird/20230913/bird/bird-rgb1/images, # 采集数据 411  分辨率大
+        /home/coco/datasets/ped-car-temp/bird/20230913/slice_640_02_1694596133/images, # 切割数据 /home/coco/datasets/ped-car-temp/bird/20230913/bird/bird-rgb1/images切割出来 极小目标
+        # /home/coco/datasets/ped-car-temp/bird/20230920/exp2/images, #50 群鸟 看不清 过滤
+        /home/coco/datasets/ped-car-temp/bird/20231012/01/exp/images, # 127 鸽子黑鸟
+        /home/coco/datasets/ped-car-temp/bird/20231012/01/exp2/images,  # 66 鸽子黑鸟
+        /home/coco/datasets/ped-car-temp/bird/20231012/01/exp3/images, # 83 鸽子黑鸟
+        /home/coco/datasets/ped-car-temp/bird/20231012/01/exp4/images, # 84  鸽子黑鸟
+        # /home/coco/datasets/ped-car-temp/bird/20231012/02/images,        # 2000 合成数据
+        # /home/coco/datasets/ped-car-temp/bird/20231012/03/images,     # 办公室背景图
+         /home/coco/datasets/ped-car-temp/bird/20231012/CUB/images,     # 通用大鸟 11788
+         /home/coco/datasets/ped-car-temp/bird/20231017/images,         # 假鸟 1500   总23909
+         /home/coco/datasets/ped-car-temp/bird/20231019/images,         # 30帧
+         /home/coco/datasets/ped-car-temp/bird/202310192/images,        # 假鸟 1500
+         /home/coco/datasets/ped-car-temp/bird/20231031/images,        # 楼门口数据集 1100   
+         /home/coco/datasets/ped-car-temp/20231115/images,             # 买的杂毛鹦鹉模型 669
+         /home/coco/datasets/ped-car-temp/20231116/bird2/images,       # 买的杂毛鹦鹉模型 2058
+          /home/coco/datasets/ped-car-temp/bird/20231120,                #  俯视杂毛鸟数据集 
+          # /home/coco/datasets/ped-car-temp/bird/20231122/bg/images,      # 背景图片
+          # /home/coco/datasets/ped-car-temp/bird/20231122/coco_bg_person/images/train2017, # coco 带有人的背景图片 
+          /home/coco/datasets/ped-car-temp/bird/20231122/ziran/images,                    #  6777  自然场景数据集
+          /home/coco/datasets/ped-car-temp/bird/20231124/cut_a/slice_640_02_1700820355/images,
+           /home/coco/datasets/ped-car-temp/bird/20231124/cut_d/slice_640_01_1700822603/images,
+            /home/coco/datasets/ped-car-temp/bird/20231124/d/images,
+      #   # 红外数据 
+      # /home/coco/datasets/ped-car-temp/bird/20230906/20230901/831birds/images, # 鸟 1748
+      # /home/coco/datasets/ped-car-temp/bird/20230913/bird/bird-ir1/images,    # 红外 采集数据 600
+      #   /home/coco/datasets/ped-car-temp/bird/20230920/bird-ir/images,  # 2002
+      # /home/coco/datasets/ped-car-temp/bird/20230920/exp51/images, #164
+      # /home/coco/datasets/ped-car-temp/bird/20230920/exp52/images, # 77
+      # /home/coco/datasets/ped-car-temp/bird/20230920/exp53/images, #707
+      # /home/coco/datasets/ped-car-temp/bird/20230920/exp55/images, #775
+      # /home/coco/datasets/ped-car-temp/bird/20230920/exp56/images, #134
+      # /home/coco/datasets/ped-car-temp/bird/20230920/exp57/images, #377
+      # /home/coco/datasets/ped-car-temp/bird/20231011/images,       #2832      
+        ] # 16551 images
+val: [
+      # /home/coco/datasets/ped-car-temp/20230802/bird/val/images,
+      /home/coco/datasets/coco/bird/images/val2017,
+        # /home/coco/datasets/ped-car-temp/bird/20230913/bird/bird-ir1/images,  
+      ]
+
+# number of classes
+nc: 1
+
+# class names
+names: ["bird"]
