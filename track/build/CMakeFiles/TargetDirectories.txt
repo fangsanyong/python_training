@@ -1,0 +1,3 @@
+/home/fsy/motrack_new/track/build/CMakeFiles/rebuild_cache.dir
+/home/fsy/motrack_new/track/build/CMakeFiles/mottrack.dir
+/home/fsy/motrack_new/track/build/CMakeFiles/edit_cache.dir
